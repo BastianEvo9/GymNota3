@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <title>BM Gym</title>
+	    <link rel="stylesheet" href="css/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="css/login.css">
+	    <link rel="icon" type="image/png" href="img/icon2.png">
+	</head>
+	<body>
+		<!--BARRA DE MENU -->
+	    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	      	<img src="img/logo.png" width="80" height="80" class="d-inline-block align-top" alt="">
+	      	<a class="navbar-brand" href="#">BM Gym</a>
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	       	<span class="navbar-toggler-icon"></span>
+	      	</button>
+		    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+		        <ul class="navbar-nav">
+		          	<li class="nav-item active">
+		           		<a class="nav-link" href="#">Inicio</a>
+		          	</li>
+		          	<li class="nav-item">
+		           		<a class="nav-link" href="planes.html">Planes</a>
+		          	</li>
+		          	<li class="nav-item">
+		            	<a class="nav-link" href="galeria.html">Galería</a>
+		          	</li>
+		          	<li class="nav-item">
+		            	<a class="nav-link" href="contacto.html">Contacto</a>
+		          	</li>
+		          	<li class="nav-item">
+		            	<a class="nav-link" href="login.html">Usuario</a>
+		          	</li>
+		        </ul>
+		    </div>
+	    </nav>
+		<div id="register_div" class="main_containers">
+		  <h1 class="main_headers">Crear Usuario</h1>
+		  	<form>
+			    <input type="text" placeholder="Nombre de usuario" class="main_textBoxes" name="usuario" required><br>
+			    <input type="email" placeholder="Ingrese un email" class="main_textBoxes" required><br>
+			    <input type="password" placeholder="Crear contraseña" class="main_textBoxes" name="password" required>
+			</form>
+		  	<button id="login" class="buttons" onclick="registro()">Registrarse</button>
+		  	<p class="or">O</p>
+		  	<button id="login_button" class="buttons">Ingresar</button>
+		</div>
+		<div id="login_div" class="main_containers"> 
+		  	<h1 class="main_headers">Iniciar sesión</h1>
+		  	<form name="form1">
+		    	<input type="text" placeholder="Nombre de usuario" class="main_textBoxes" name="txt_user" required><br>
+		    	<input type="password" placeholder="Contraseña" class="main_textBoxes" name="txt_pass" required>
+		  	</form>
+		  	<button id="login" class="buttons" onclick="usrpas()">Ingresar</button>
+		  	<p class="or">O</p>
+		  	<button id="register_button" class="buttons">Registrarse</button>
+		</div>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/validaLogin.js"></script>
+	</body>
+</html>
